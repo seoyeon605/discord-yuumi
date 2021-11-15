@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands
-from discord.ext.commands import Bot
 import os
 
 
@@ -14,7 +13,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == "!내전":
+    if message.content == "!유미내전":
         channel = client.get_channel(877148347939581972)
         msg = await channel.send('@everyone \n 내전')
         await msg.add_reaction('<:yes:909402065799872522>')
