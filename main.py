@@ -31,8 +31,8 @@ async def 내전시작(ctx):
     embed = discord.Embed(title='내전을 시작합니다!',
                           description='<#899515674139959366> 에서 팀을 선택해주세요\n각자 팀으로 이동해주시면 됩니다',
                           colour=0xffff00)
-    embed.add_field(name='1팀', value='<#889644250025828362>\n<#877148491732889600>', inline=False)
-    embed.add_field(name='2팀', value='<#889644658504900639>\n<#877148512968646698>', inline=False)
+    embed.add_field(name='1팀', value='<#889644250025828362>  <#877148491732889600>', inline=False)
+    embed.add_field(name='2팀', value='<#889644658504900639>  <#877148512968646698>', inline=False)
     embed.add_field(name='안내', value='팀 채팅이나 음성을 이용하여 준비해주시고,\n모두 준비가 되면 시작하겠습니다!', inline=False)
     channel = bot.get_channel(880094169962537010)
     await channel.send(embed=embed)
